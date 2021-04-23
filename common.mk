@@ -45,7 +45,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/handheld_core_hardware.xml
     
 # OnePlus File Manager
-TARGET_INCLUDE_OP_FILE_MANAGER := true    
+PRODUCT_PACKAGES += \
+    OP_FILE_MANAGER   
 
 # A/B
 AB_OTA_UPDATER := true
